@@ -31,6 +31,7 @@
 
 /* private includes ----------------------------------------------------------*/
 /* add user code begin private includes */
+#include "app_update_fw_task.h"
 
 /* add user code end private includes */
 
@@ -222,6 +223,7 @@ void USART1_IRQHandler(void)
     /* add user code begin USART1_USART_RDBF_FLAG */
     /* handle data received and clear flag */
     val_rx = usart_data_receive(USART1);
+    APP_Update_FW_ReceiveByte((uint8_t)val_rx);
     /* add user code end USART1_USART_RDBF_FLAG */ 
   }
 

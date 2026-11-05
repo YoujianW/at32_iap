@@ -10,6 +10,7 @@ extern "C" {
 #include "FreeRTOSConfig.h"
 #include "freertos_app.h"
 #include "app_debug_task.h"
+#include "app_update_fw_task.h"
 
 void app_task_create(void);
 void app_freertos_init(void);

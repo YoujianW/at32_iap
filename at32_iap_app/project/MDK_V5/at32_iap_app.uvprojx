@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>AT32F403AVGT7, USE_STDPERIPH_DRIVER, AT_START_F403A_V1</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\libraries\drivers\inc;..\..\libraries\cmsis\cm4\core_support;..\..\libraries\cmsis\cm4\device_support;..\inc;../../ace_robot_kit/BSP/inc;../../ace_robot_kit/APP/app_config;../../ace_robot_kit/APP/app_task;../../ace_robot_kit/Component/led;../../ace_robot_kit/Component/vofa;../../middlewares/freertos/source/include;../../middlewares/freertos/source/portable/memmang;../../middlewares/freertos/source/portable/rvds/ARM_CM4F;</IncludePath>
+              <IncludePath>..\..\libraries\drivers\inc;..\..\libraries\cmsis\cm4\core_support;..\..\libraries\cmsis\cm4\device_support;..\inc;../../ace_robot_kit/BSP/inc;../../ace_robot_kit/APP/app_config;../../ace_robot_kit/APP/app_task;../../ace_robot_kit/Component/led;../../ace_robot_kit/Component/crc_check;../../middlewares/freertos/source/include;../../middlewares/freertos/source/portable/memmang;../../middlewares/freertos/source/portable/rvds/ARM_CM4F</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -513,9 +513,9 @@
               <FilePath>../../ace_robot_kit/Component/led/led.c</FilePath>
             </File>
             <File>
-              <FileName>vofa.c</FileName>
+              <FileName>crc_check.c</FileName>
               <FileType>1</FileType>
-              <FilePath>../../ace_robot_kit/Component/vofa/vofa.c</FilePath>
+              <FilePath>../../ace_robot_kit/Component/crc_check/crc_check.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -536,6 +536,11 @@
               <FileName>app_debug_task.c</FileName>
               <FileType>1</FileType>
               <FilePath>../../ace_robot_kit/APP/app_task/app_debug_task.c</FilePath>
+            </File>
+            <File>
+              <FileName>app_update_fw_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../../ace_robot_kit/APP/app_task/app_update_fw_task.c</FilePath>
             </File>
           </Files>
         </Group>
